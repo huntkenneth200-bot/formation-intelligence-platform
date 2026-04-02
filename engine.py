@@ -1,4 +1,6 @@
+from config import PlatformConfig
 from main import FormationIntelligencePlatform
+
 
 class ScenarioInterpreter:
     """
@@ -41,7 +43,8 @@ def process_scenario(text: str) -> str:
     This is the entry point for the entire system.
     """
     # 1. Build the platform (your full system)
-    platform = FormationIntelligencePlatform()
+    config = PlatformConfig()
+    platform = FormationIntelligencePlatform(config)
 
     # 2. Interpret the scenario
     interpreter = ScenarioInterpreter()
