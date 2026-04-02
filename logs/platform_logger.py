@@ -13,3 +13,13 @@ formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 console_handler.setFormatter(formatter)
 
 logger.addHandler(console_handler)
+
+class PlatformLogger:
+    def __init__(self):
+        self.logger = logger
+
+    def info(self, msg):
+        self.logger.info(msg)
+
+    def error(self, msg):
+        self.logger.error(msg)
