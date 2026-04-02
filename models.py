@@ -59,3 +59,13 @@ class CapitalSourceClearance:
     source_id: Optional[str] = None
     approved: Optional[bool] = None
     metadata: Optional[Dict[str, Any]] = None
+
+
+@dataclass
+class FundAllocationRecord:
+    allocation_id: Optional[str] = None
+    source_id: Optional[str] = None
+    amount: Optional[float] = None
+    purpose: Optional[str] = None
+    metadata: Optional[Dict[str, Any]] = None
+
