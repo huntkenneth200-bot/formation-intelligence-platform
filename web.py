@@ -1,3 +1,4 @@
+from engine import process_scenario
 from flask import Flask, render_template_string, request
 import os
 
@@ -79,7 +80,7 @@ def home():
     if request.method == "POST":
         scenario = request.form.get("scenario", "")
         # TODO: connect this to your engine logic
-        output = f"You submitted: {scenario}"
+        output = output = process_scenario(scenario)
     return render_template_string(HTML_PAGE, output=output)
 
 if __name__ == "__main__":
