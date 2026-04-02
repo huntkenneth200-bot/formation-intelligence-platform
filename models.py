@@ -35,3 +35,11 @@ class TheologicalReviewRecord:
     reviewer: Optional[str] = None
     notes: Optional[str] = None
     outcome: Optional[str] = None
+
+
+@dataclass
+class CouncilMemberRecord:
+    member_id: Optional[str] = None
+    name: Optional[str] = None
+    role: Optional[str] = None
+    metadata: Optional[Dict[str, Any]] = None
