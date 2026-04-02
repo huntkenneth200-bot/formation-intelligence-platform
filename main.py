@@ -12,7 +12,7 @@ Authority: Council of Metanoia (DOC-01.1 Platform Governing Charter)
 from config import PlatformConfig
 from clusters.clu_02_council_of_metanoia import CouncilOfMetanoia
 from clusters.clu_03_spikenard_foundation import SpikenardFoundation
-from clusters.clu_04_emmaus_road import EmmausRoad
+# from clusters.clu_04_emmaus_road import EmmausRoad
 from clusters.clu_05_linguistic_diffusion_engine import LinguisticDiffusionEngine
 from clusters.clu_06_capital_access_engine import CapitalAccessEngine
 from logs.platform_logger import PlatformLogger
