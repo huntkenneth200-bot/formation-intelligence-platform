@@ -69,3 +69,11 @@ class FundAllocationRecord:
     purpose: Optional[str] = None
     metadata: Optional[Dict[str, Any]] = None
 
+
+@dataclass
+class LanguageComplianceClearance:
+    clearance_id: Optional[str] = None
+    entity_id: Optional[str] = None
+    compliant: Optional[bool] = None
+    notes: Optional[str] = None
+    metadata: Optional[Dict[str, Any]] = None
