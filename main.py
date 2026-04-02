@@ -10,7 +10,6 @@ Authority: Council of Metanoia (DOC-01.1 Platform Governing Charter)
 """
 
 from config import PlatformConfig
-from clusters.clu_01_restoration_os import RestorationOS
 from clusters.clu_02_council_of_metanoia import CouncilOfMetanoia
 from clusters.clu_03_spikenard_foundation import SpikenardFoundation
 from clusters.clu_04_emmaus_road import EmmausRoad
