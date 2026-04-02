@@ -85,3 +85,14 @@ class LexiconEntry:
     term: Optional[str] = None
     definition: Optional[str] = None
     metadata: Optional[Dict[str, Any]] = None
+
+
+@dataclass
+class LexiconUpdateRecord:
+    update_id: Optional[str] = None
+    entry_id: Optional[str] = None
+    old_value: Optional[str] = None
+    new_value: Optional[str] = None
+    updated_by: Optional[str] = None
+    timestamp: Optional[str] = None
+    metadata: Optional[Dict[str, Any]] = None
