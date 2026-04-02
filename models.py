@@ -51,3 +51,11 @@ class CapitalSourceRecord:
     name: Optional[str] = None
     amount: Optional[float] = None
     metadata: Optional[Dict[str, Any]] = None
+
+
+@dataclass
+class CapitalSourceClearance:
+    clearance_id: Optional[str] = None
+    source_id: Optional[str] = None
+    approved: Optional[bool] = None
+    metadata: Optional[Dict[str, Any]] = None
