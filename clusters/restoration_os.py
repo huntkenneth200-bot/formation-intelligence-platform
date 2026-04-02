@@ -1,10 +1,11 @@
 # clusters/restoration_os.py
 
+from clusters.clu_01_fracture_engine import FractureEngine
+
 class RestorationOS:
     """
-    Minimal placeholder RestorationOS cluster.
-    This satisfies imports during platform initialization.
-    Full cluster logic will be inserted later.
+    RestorationOS cluster.
+    Now wired to the real CLU‑01 Fracture Engine.
     """
 
     def __init__(self, config=None, logger=None):
@@ -13,17 +14,5 @@ class RestorationOS:
         self.status = "READY"
 
         # Placeholder fracture engine so routing works
-        self.fracture_engine = FractureEnginePlaceholder()
+        self.fracture_engine = FractureEngine(config, logger)
 
-class FractureEnginePlaceholder:
-    """
-    Minimal placeholder fracture engine.
-    Allows scenario routing to function until the real engine is installed.
-    """
-
-    def receive_assessment(self, payload: dict) -> dict:
-        return {
-            "message": "Fracture engine placeholder received payload.",
-            "payload_length": payload.get("metadata", {}).get("length", 0),
-            "contains_scripture": payload.get("metadata", {}).get("contains_scripture", False)
-        }
