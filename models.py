@@ -43,3 +43,11 @@ class CouncilMemberRecord:
     name: Optional[str] = None
     role: Optional[str] = None
     metadata: Optional[Dict[str, Any]] = None
+
+
+@dataclass
+class CapitalSourceRecord:
+    source_id: Optional[str] = None
+    name: Optional[str] = None
+    amount: Optional[float] = None
+    metadata: Optional[Dict[str, Any]] = None
