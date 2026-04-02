@@ -77,3 +77,11 @@ class LanguageComplianceClearance:
     compliant: Optional[bool] = None
     notes: Optional[str] = None
     metadata: Optional[Dict[str, Any]] = None
+
+
+@dataclass
+class LexiconEntry:
+    entry_id: Optional[str] = None
+    term: Optional[str] = None
+    definition: Optional[str] = None
+    metadata: Optional[Dict[str, Any]] = None
