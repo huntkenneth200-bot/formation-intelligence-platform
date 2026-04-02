@@ -9,6 +9,7 @@ Status: WIRED — Step 10 IC Integration | Governance Layer Installed (Step 15B)
 Authority: Council of Metanoia (DOC-01.1 Platform Governing Charter)
 """
 
+from clusters.restoration_os import RestorationOS
 from config import PlatformConfig
 from clusters.clu_02_council_of_metanoia import CouncilOfMetanoia
 from clusters.clu_03_spikenard_foundation import SpikenardFoundation
