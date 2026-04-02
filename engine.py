@@ -1,4 +1,4 @@
-from main import Platform
+from main import FormationIntelligencePlatform
 
 class ScenarioInterpreter:
     """
@@ -21,7 +21,7 @@ class ScenarioRouter:
     """
     Routes interpreted scenarios into the correct cluster or engine.
     """
-    def __init__(self, platform: Platform):
+    def __init__(self, platform: FormationIntelligencePlatform):
         self.platform = platform
 
     def route(self, payload: dict) -> dict:
@@ -41,7 +41,7 @@ def process_scenario(text: str) -> str:
     This is the entry point for the entire system.
     """
     # 1. Build the platform (your full system)
-    platform = Platform()
+    platform = FormationIntelligencePlatform()
 
     # 2. Interpret the scenario
     interpreter = ScenarioInterpreter()
