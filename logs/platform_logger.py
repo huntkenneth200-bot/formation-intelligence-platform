@@ -15,7 +15,8 @@ console_handler.setFormatter(formatter)
 logger.addHandler(console_handler)
 
 class PlatformLogger:
-    def __init__(self):
+    def __init__(self, config=None):
+        self.config = config
         self.logger = logger
 
     def info(self, msg):
