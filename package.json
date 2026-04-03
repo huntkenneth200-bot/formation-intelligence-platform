@@ -1,0 +1,27 @@
+{
+  "name": "fip",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+"scripts": {
+  "build": "tsc",
+  "start": "node dist/index.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huntkenneth200-bot/formation-intelligence-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/huntkenneth200-bot/formation-intelligence-platform/issues"
+  },
+  "homepage": "https://github.com/huntkenneth200-bot/formation-intelligence-platform#readme",
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.2"
+  }
+}
